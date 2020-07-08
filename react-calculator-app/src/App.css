@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #80d0c7, #13547a);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.container{
+    margin-top: .5rem;
+    width: 100%;
+    height: 100%;
+    padding: .5rem;
+    text-align: center;
+}
+.container h1{
+    color: #bbe6e4;
+    font-size: 42px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container .calculator-body{
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    background-color: #f0eaea;
+    border-radius: 8px;
+    padding: 5px 10px 20px 10px;
+}
+.container .calculator-body .calculator-result p{
+    width: 100%;
+    height: 100%;
+    min-height: 40px;
+    background-color: #fff9f9;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, .2);
+    text-align: right;
+    word-wrap: break-word;
+    color: #161818;
+    font-size: 18px;
+}
+.container .calculator-body .calculator-result p::first-line{
+    line-height: 35px;
+}
+.container .calculator-body .calculator-keypad{
+    width: 100%;
+    height: 100%;
+    background-color: #f0eaea;
+}
+.container .calculator-body .calculator-keypad button{
+    margin: 10px;
+    width: 20%;
+    height: 45px;
+    outline: none;
+    border-radius: 8px;
+    border: none;
+    background: #f0eaea;
+    box-shadow: -8px -8px 10px #fff9f9, 8px 8px 10px #d8d3d3;
+    font-size: 22px;
+    color: #161818;
+    cursor: pointer;
+}
+.container .calculator-body .calculator-keypad button:focus{
+    box-shadow: -2px -2px 5px #fff9f9, 2px 2px 5px #d8d3d3;
+}
+.container .calculator-body .calculator-keypad .clearBtn{
+    width: 100%;
+    float: right;
+}
+.container .calculator-body .calculator-keypad .clearBtn button{
+    width: 15%;
+    float: right;
+    position: relative;
+}
